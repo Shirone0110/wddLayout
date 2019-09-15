@@ -10,11 +10,17 @@ body
 .header
 {
     border: 1px solid #3BFFF0;
+    margin-bottom: 10px;
 }
 
 h1
 {
     color: yellow;
+}
+
+h3
+{
+    color: #FF9700;
 }
 
 .sound
@@ -84,6 +90,7 @@ th, td
 {
     border: 1px solid #3BFFF0;
     padding: 10px;
+    margin: 5px;
     text-align: center;
 }
 
@@ -94,5 +101,18 @@ input
 
 rect
 {
-    color: white;
+    fill: white;
+}
+
+.input_url
+{
+    display: block;
+    width: 500px;
+}
+
+iframe
+{
+    height: auto;
+    width: auto;
+    display: block;
 }
