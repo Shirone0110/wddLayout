@@ -1,18 +1,24 @@
 body
 {
     font-size: 20px;
+    color: white;
     background-attachment: fixed;
     background-image: url("background.jpg");
 }
 
 .header
 {
-    border: 1px solid #000000;
+    border: 1px solid #3BFFF0;
+}
+
+h1
+{
+    color: yellow;
 }
 
 .sound
 {
-    background-image: url("speaker.png");
+    background-image: url("speaker_2.png");
     width: 25px;
     height: 25px;
 }
@@ -20,6 +26,17 @@ body
 a
 {
     text-decoration: none;
+    color: yellow;
+}
+
+a:hover
+{
+    color: #FFB23B;
+}
+
+a:visited
+{
+    color: #62FF3B;
 }
 
 .nav
@@ -40,7 +57,7 @@ h1
 
 [class*="box"]
 {
-    border: 1px solid #000000;
+    border: 1px solid #3BFFF0;
     margin: 10px;
     padding: 10px;
 }
@@ -59,7 +76,7 @@ label
 
 th, td
 {
-    border: 1px solid #000000;
+    border: 1px solid #3BFFF0;
     margin: auto;
     padding: 10px;
     text-align: center;
