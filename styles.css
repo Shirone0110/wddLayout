@@ -11,8 +11,8 @@ body
 .sound
 {
     background-image: url("speaker.png");
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
 }
 
 a
@@ -43,22 +43,19 @@ h1
     padding: 10px;
 }
 
-.day-box COMPLETED
-{
-    background-color: #F9FE70;
-}
-
-.day-box CURRENT
-{
-    background-color: #FED370;
-}
-
-.day-box PREP
-{
-    background-color: #FE7070;
-}
-
 label
 {
     display: block;
+    margin: 10px;
+}
+
+.person_image
+{
+    width: 80px;
+    height: 110px;
+}
+
+th, td
+{
+    border: 1px solid #000000;
 }
