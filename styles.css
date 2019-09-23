@@ -123,11 +123,13 @@ a:hover
 [class*="prep-box"]
 {
     background-color: rgba(191, 85, 236, 0.5);
+    height: 120px;
 }
 
 [class*="prep-box"]::after
 {
     content: " " url("prep-box.gif");
+    float: right;
 }
 
 label
