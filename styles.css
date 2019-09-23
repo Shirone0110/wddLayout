@@ -1,8 +1,18 @@
+@font-face
+{
+    font-family: 'Comic Sans';
+    src: url('comic-webfont.eot');
+    src: url('comic-webfont.eot')
+        format('embedded-opentype'),
+        url('comic-webfont.woff') format('woff'),
+        url('comc.ttf') format('truetype'),
+        url('comic-webfont.svg') format('svg');
+}
+
 body
 {
     font-size: 20px;
-    text-shadow: 2px 2px #000000;
-    color: white;
+    color: black;
     background-attachment: fixed;
     background-image: url("cat_background_2.jpg");
 }
@@ -24,14 +34,14 @@ body
     position: fixed;
     width: 100%;
     top: 0px;
-    background-color: rgba(149, 165, 166, 1);
     border-radius: 10px;
     padding: 0px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 h1
 {
-    color: yellow;
+    color: black;
     font-size: 40px;
     text-align: center;
     margin-top: 210px;
@@ -56,7 +66,7 @@ h3:first-of-type
 
 .sound
 {
-    background-image: url("speaker_2.png");
+    background-image: url("speaker.png");
     width: 25px;
     height: 25px;
 }
@@ -64,17 +74,17 @@ h3:first-of-type
 a
 {
     text-decoration: none;
-    color: yellow;
+    color: black;
 }
 
 a:visited
 {
-    color: #62FF3B;
+    color: black;
 }
 
 a:hover
 {
-    color: #FFB23B;
+    color: blue;
 }
 
 .nav
@@ -87,13 +97,20 @@ a:hover
 {
     text-transform: capitalize;
     margin: 50px;
+    color: black;
+    border-top: 1px solid #000000;
+}
+
+.nav>a:hover
+{
+    border-top: 3px solid #000000;
 }
 
 [class*="box"]
 {
     border-radius: 10px;
     margin: 10px;
-    border: 1px solid #3BFFF0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     padding: 10px;
     z-index: 0;
     min-height: 120px;
@@ -101,39 +118,33 @@ a:hover
 
 [class*="day-box"]
 {
-    background-color: rgba(137, 196, 244, 0.5);
+    background-color: rgba(242, 241, 239, 0.5);
     margin-bottom: 20px;
 }
 
 [class*="reading-box"]
 {
-    background-color: rgba(25, 181, 254, 0.5);
+    background-color: rgba(251, 255, 176, 0.5);
     
 }
 
 [class*="lab-box"]
 {
-    background-color: rgba(31, 58, 147, 0.5);
+    background-color: rgba(212, 255, 208, 0.5);
 }
 
 [class*="grading-box"]
 {
-    background-color: rgba(140, 20, 252, 0.5);
+    background-color: rgba(255, 220, 255, 0.5);
 }
 
 [class*="prep-box"]
 {
-    background-color: rgba(191, 85, 236, 0.5);
+    background-color: rgba(206, 255, 255, 0.5);
     min-height: 120px;
 }
 
 [class*="prep-box"]::after
-{
-    content: " " url("prep-box.png");
-    float: right;
-}
-
-[class*="prep-box"]:hover
 {
     content: " " url("prep-box.gif");
     float: right;
