@@ -96,6 +96,7 @@ a:hover
     border: 1px solid #3BFFF0;
     padding: 10px;
     z-index: 0;
+    min-height: 120px;
 }
 
 [class*="day-box"]
@@ -123,13 +124,24 @@ a:hover
 [class*="prep-box"]
 {
     background-color: rgba(191, 85, 236, 0.5);
-    height: 120px;
+    min-height: 120px;
 }
 
 [class*="prep-box"]::after
 {
+    content: " " url("prep-box.png");
+    float: right;
+}
+
+[class*="prep-box"]:hover
+{
     content: " " url("prep-box.gif");
     float: right;
+}
+
+.assignmentWidget
+{
+    float: left;
 }
 
 label
