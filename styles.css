@@ -43,7 +43,7 @@ h3
     text-align: center;
 }
 
-h3: first-of-type
+h3:first-of-type
 {
     margin-top: 210px;
 }
@@ -123,6 +123,11 @@ a:hover
 [class*="prep-box"]
 {
     background-color: rgba(191, 85, 236, 0.5);
+}
+
+[class*="prep-box"]::after
+{
+    content: " " url("prep-box.gif");
 }
 
 label
