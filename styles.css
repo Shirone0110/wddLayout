@@ -14,7 +14,13 @@ body
     font-size: 20px;
     color: black;
     background-attachment: fixed;
-    background-image: url("cat_background_2.jpg");
+    background-image: url("loop_background.jpg");
+    background-repeat: repeat;
+}
+
+.day::after
+{
+    content: " " url('cat.jpg');
 }
 
 .title
@@ -96,44 +102,45 @@ a:hover
 .nav>a
 {
     text-transform: capitalize;
-    margin: 50px;
+    margin: 40px;
     color: black;
     border-top: 1px solid #000000;
 }
 
 .nav>a:hover
 {
-    border-top: 3px solid #000000;
+    border-top: 3px solid blue;
+    color: blue;
 }
 
-.nav>a:nth-child(1):hover:after
+.nav>a:nth-child(1)::after
 {
-    content: url('logout.jpg');
+    content: " " url('logout.jpg');
 }
 
-.nav>a:nth-child(2):hover:after
+.nav>a:nth-child(2)::after
 {
-    content: url('myaccount.jpg');
+    content: " " url('myaccount.jpg');
 }
 
-.nav>a:nth-child(3):hover:after
+.nav>a:nth-child(3)::after
 {
-    content: url('home.jpg');
+    content: " " url('home.jpg');
 }
 
-.nav>a:nth-child(4):hover:after
+.nav>a:nth-child(4)::after
 {
-    content: url('classmate.jpg');
+    content: " " url('classmate.jpg');
 }
 
-.nav>a:nth-child(5):hover:after
+.nav>a:nth-child(5)::after
 {
-    content: url('seating.jpg');
+    content: " " url('seating.jpg');
 }
 
-.nav>a:nth-child(6):hover:after
+.nav>a:nth-child(6)::after
 {
-    content: url('grades.jpg');
+    content: " " url('grades.jpg');
 }
 
 [class*="box"]
@@ -150,6 +157,7 @@ a:hover
 {
     background-color: rgba(242, 241, 239, 0.5);
     margin-bottom: 20px;
+    width: 80%;
 }
 
 [class*="reading-box"]
@@ -262,6 +270,8 @@ iframe
 .assignment-label
 {
     font-size: 24px;
+    font-weight: bold;
+    
 }
 
 .account_form
