@@ -18,9 +18,9 @@ body
     background-repeat: repeat;
 }
 
-.day::after
+.day::before
 {
-    content: " " url('cat.jpg');
+    content: " " url('cat.png');
 }
 
 .title
@@ -41,10 +41,20 @@ body
     top: 0px;
     border-radius: 10px;
     padding: 0px 20px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
 }
 
-.person_info
+.header~h1:first-of-type
+{
+    margin-top: 220px;
+}
+
+.header~form:first-of-type
+{
+    margin-top: 220px;
+}
+
+.header>.person_info
 {
     background-image: url('banner.jpg');
     background-repeat: repeat;
@@ -55,16 +65,14 @@ h1
     color: black;
     font-size: 40px;
     text-align: center;
-    margin-top: 220px;
 }
 
 h3
 {
-    color: #FF9700;
     text-align: center;
 }
 
-h3:first-of-type
+.header~h3:first-of-type
 {
     margin-top: 220px;
 }
@@ -86,6 +94,7 @@ a
 {
     text-decoration: none;
     color: black;
+    cursor: url('link-hover.png');
 }
 
 a:visited
@@ -115,42 +124,66 @@ a:hover
 .nav>a:hover
 {
     border-top: 3px solid blue;
-    color: blue;
 }
 
 .nav>a:nth-child(1)::after
 {
-    content: " " url('logout.jpg');
+    content: " " url('logout.png');
 }
 
 .nav>a:nth-child(1):hover:after
 {
-    content: " " url('logout-hover.jpg');
+    content: " " url('logout-hover.png');
 }
 
 .nav>a:nth-child(2)::after
 {
-    content: " " url('myaccount.jpg');
+    content: " " url('myaccount.png');
+}
+
+.nav>a:nth-child(2):hover:after
+{
+    content: " " url('myaccount-hover.png');
 }
 
 .nav>a:nth-child(3)::after
 {
-    content: " " url('home.jpg');
+    content: " " url('home.png');
+}
+
+.nav>a:nth-child(3):hover:after
+{
+    content: " " url('home-hover.png');
 }
 
 .nav>a:nth-child(4)::after
 {
-    content: " " url('classmate.jpg');
+    content: " " url('classmate.png');
+}
+
+.nav>a:nth-child(4):hover:after
+{
+    content: " " url('classmate-hover.png');
 }
 
 .nav>a:nth-child(5)::after
 {
-    content: " " url('seating.jpg');
+    content: " " url('seating.png');
+}
+
+.nav>a:nth-child(5):hover:after
+{
+    content: " " url('seating-hover.png');
 }
 
 .nav>a:nth-child(6)::after
 {
-    content: " " url('grades.jpg');
+    content: " " url('grades.png');
+}
+
+.nav>a:nth-child(6):hover:after
+{
+    content: " " url('grades-hover.png');
 }
 
 [class*="box"]
@@ -170,6 +203,7 @@ a:hover
     margin-bottom: 20px;
     width: 80%;
     margin: auto;
+    margin-bottom: 20px;
 }
 
 .reading-box
@@ -187,6 +221,12 @@ a:hover
 .lab-box
 {
     background-color: rgba(212, 255, 208, 0.5);
+}
+
+.lab-box:hover:after
+{
+    content: url('lab-box.gif');
+    float: right;
 }
 
 .grading-box
@@ -221,6 +261,15 @@ a:hover
 .assignmentWidget
 {
     float: left;
+}
+
+.assignment_title
+{
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    letter-spacing: 0.1em;
 }
 
 label
@@ -291,24 +340,22 @@ iframe
 {
     font-size: 24px;
     font-weight: bold;
-    
 }
 
-.assignment_form
+.grading-box>.assignment-label
 {
-    margin-top: 220px;
+    float: left;
 }
 
 .account_form
 {
     text-align: center;
-    margin-top: 220px;
     background-color: rgba(206, 255, 255, 0.5);
 }
 
 svg
 {
-    margin-top: 210px;
+    margin-top: 220px;
 }
 
 svg>rect
@@ -332,8 +379,21 @@ svg>rect
     text-align: left;
 }
 
+.lab-box>.assignment_link>.assignmentWidget>.assignment-title
+{
+    margin: auto;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+}
+
 .graded-assignment
 {
     text-align: center;
     margin: 10px;
+}
+
+.assignmentWidget>.grade
+{
+    text-align: left;
 }
