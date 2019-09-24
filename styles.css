@@ -26,10 +26,9 @@ body
 .title
 {
     font-size: 28px;
-    color: yellow;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .header
@@ -45,12 +44,18 @@ body
     background-color: rgba(255, 255, 255, 0.5);
 }
 
+.person_info
+{
+    background-image: url('banner.jpg');
+    background-repeat: repeat;
+}
+
 h1
 {
     color: black;
     font-size: 40px;
     text-align: center;
-    margin-top: 210px;
+    margin-top: 220px;
 }
 
 h3
@@ -61,7 +66,7 @@ h3
 
 h3:first-of-type
 {
-    margin-top: 210px;
+    margin-top: 220px;
 }
 
 .grade 
@@ -118,6 +123,11 @@ a:hover
     content: " " url('logout.jpg');
 }
 
+.nav>a:nth-child(1):hover:after
+{
+    content: " " url('logout-hover.jpg');
+}
+
 .nav>a:nth-child(2)::after
 {
     content: " " url('myaccount.jpg');
@@ -151,6 +161,7 @@ a:hover
     padding: 10px;
     z-index: 0;
     min-height: 120px;
+    overflow: auto;
 }
 
 [class*="day-box"]
@@ -158,38 +169,45 @@ a:hover
     background-color: rgba(242, 241, 239, 0.5);
     margin-bottom: 20px;
     width: 80%;
+    margin: auto;
 }
 
-[class*="reading-box"]
+.reading-box
 {
     background-color: rgba(251, 255, 176, 0.5);
+    clear: left;
 }
 
-[class*="reading-box"]:hover:after
+.reading-box:hover:after
 {
-    content: " " url('read-box.gif');
+    content: url('read-box.gif');
     float: right;
 }
 
-[class*="lab-box"]
+.lab-box
 {
     background-color: rgba(212, 255, 208, 0.5);
 }
 
-[class*="grading-box"]
+.grading-box
 {
     background-color: rgba(255, 220, 255, 0.5);
 }
 
-[class*="prep-box"]
+.grading-box:hover:after
 {
-    background-color: rgba(206, 255, 255, 0.5);
-    min-height: 120px;
+    content: url('grade-box.gif');
+    float: right;
 }
 
-[class*="prep-box"]:hover:after
+.prep-box
 {
-    content: " " url("prep-box.gif");
+    background-color: rgba(206, 255, 255, 0.5);
+}
+
+.prep-box:hover:after
+{
+    content: url("prep-box.gif");
     float: right;
 }
 
@@ -197,6 +215,7 @@ a:hover
 {
     float: left;
     display: block;
+    clear: left;
 }
 
 .assignmentWidget
@@ -224,11 +243,12 @@ table
 
 th, td
 {
-    border: 1px solid #3BFFF0;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     padding: 10px;
     margin: 5px;
     text-align: center;
+    background-color: rgba(251, 255, 176, 0.5);
 }
 
 th
@@ -244,7 +264,7 @@ input
 
 rect
 {
-    fill: white;
+    fill: rgba(212, 255, 208, 0.5);
 }
 
 .input_url
@@ -256,7 +276,7 @@ rect
 
 iframe
 {
-    height: 80%
+    height: 80%;
     width: 80%;
     display: block;
     margin: auto;
@@ -276,16 +296,44 @@ iframe
 
 .assignment_form
 {
-    margin-top: 210px;
+    margin-top: 220px;
 }
 
 .account_form
 {
     text-align: center;
-    margin-top: 210px;
+    margin-top: 220px;
+    background-color: rgba(206, 255, 255, 0.5);
 }
 
 svg
 {
     margin-top: 210px;
+}
+
+svg>rect
+{
+    fill: rgba(0, 0, 0, 0.5);
+}
+
+.assignment-title
+{
+    margin-top: 220px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.prep-box>.assignment_link>.assignmentWidget>.assignment-title
+{
+    margin: auto;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.graded-assignment
+{
+    text-align: center;
+    margin: 10px;
 }
