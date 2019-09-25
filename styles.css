@@ -205,7 +205,7 @@ a:hover
     clear: left;
 }
 
-.reading-box:hover:after
+.reading-box:hover:before
 {
     content: url('read-box.gif');
     float: right;
@@ -395,4 +395,11 @@ svg>rect
 .assignment_form
 {
     background-color: rgba(206, 255, 255, 0.5);
+}
+
+.partners
+{
+    position: absolute;
+    top: -25px;
+    left: 150px;
 }
