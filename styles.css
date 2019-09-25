@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Lato|Montserrat&display=swap');
+
 body
 {
     font-size: 20px;
@@ -48,7 +50,8 @@ body
 .header>.person_info
 {
     background-image: url('banner.jpg');
-    background-repeat: repeat;
+    background-repeat: no-repeat;
+    align-content: center;
 }
 
 h1
@@ -87,6 +90,7 @@ a
 {
     text-decoration: none;
     color: black;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a:visited
@@ -401,5 +405,5 @@ svg>rect
 {
     position: absolute;
     top: -25px;
-    left: 150px;
+    left: 250px;
 }
